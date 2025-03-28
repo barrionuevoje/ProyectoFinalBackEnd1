@@ -14,14 +14,14 @@ Este proyecto es una API de comercio electrónico que permite gestionar carritos
 
 Primero, clona el repositorio en tu máquina local:
 
-```bash
-git clone https://github.com/tu-usuario/ecommerce-api.git
-cd ecommerce-api
+bash
+```git clone https://github.com/tu-usuario/ecommerce-api.git```
+cd ecommerce-api```
 
 Instalar dependencias
 Ejecuta el siguiente comando para instalar las dependencias del proyecto:
 
-```npm install```
+npm install
 
 Configuración
 Variables de entorno
