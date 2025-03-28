@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+
+    <div>
+        {{#each products}}
+            <div class="product">
+                <h3>{{this.name}}</h3>
+                <p>Precio: ${{this.price}}</p>
+                <p>Categoría: {{this.category}}</p>
+                <p>Disponibilidad: {{this.availability}}</p>
+                
+                <!-- Enlace a la página de detalles del producto -->
+                <a href="/products/{{this.id}}">Ver detalles</a>
+                
+                <!-- Botón para agregar al carrito -->
+                <form action="/api/carts/{{cartId}}/product/{{this.id}}" method="POST">
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </div>
+        {{/each}}
+    </div>
+
+    <!-- Paginación -->
+    <div class="pagination">
+        {{#if prevLink}}
+            <a href="{{prevLink}}">Página Anterior</a>
+        {{/if}}
+        <span>Página {{page}} de {{totalPages}}</span>
+        {{#if nextLink}}
+            <a href="{{nextLink}}">Página Siguiente</a>
+        {{/if}}
+    </div>
+
+</body>
+</html>
