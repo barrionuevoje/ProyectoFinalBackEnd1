@@ -16,17 +16,17 @@ Primero, clona el repositorio en tu máquina local:
 
 bash
 ```git clone https://github.com/tu-usuario/ecommerce-api.git```
-cd ecommerce-api```
+```cd ecommerce-api```
 
 Instalar dependencias
 Ejecuta el siguiente comando para instalar las dependencias del proyecto:
 
-npm install
+```npm install```
 
 Configuración
 Variables de entorno
 Este proyecto no requiere de variables de entorno específicas. Sin embargo, asegúrate de tener un archivo products.json en la carpeta data con la estructura adecuada para almacenar los productos.
-
+```
 Uso de la API
 Endpoints disponibles
 1. GET /api/carts
@@ -85,7 +85,7 @@ Copiar
 Editar
 npm start
 El servidor estará corriendo en http://localhost:8080.
-
+``````
 Contribuir
 Haz un fork de este repositorio.
 
@@ -96,12 +96,12 @@ Haz commit de tus cambios (git commit -am 'Añadir nueva característica').
 Haz push a la rama (git push origin feature/nueva-caracteristica).
 
 Crea un pull request.
-
+```
 
 markdown
 Copiar
 Editar
-
+```
 Este archivo `README.md` incluye:
 
 - Descripción general del proyecto.
@@ -111,5 +111,4 @@ Este archivo `README.md` incluye:
 - Cómo probar la API.
 - Contribución y licencia.
 
-Si necesitas ajustar algo o agregar más detalles, me avisas. ¡Espero que te sea útil!
 
